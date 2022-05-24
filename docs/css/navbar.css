@@ -1,0 +1,155 @@
+
+  
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  /* header */
+  
+  .header {
+    background-color: var(--green);
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    width: 100%;
+    z-index: 3;
+    display: block;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 10px 10px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+  }
+  .header li a, .header .menu-btn{
+      transition: .3s linear;
+  }
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #f4f4f48c;
+  }
+  .header li a:hover{
+      color: var(--black);
+  }
+  
+   .logo {
+    display: inline-block;
+    width: 150px;
+    padding: 5px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 43px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: var(--white);
+    display: block;
+    height: 4px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 30px;
+    border-radius: 10px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 10px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -10px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+
+     .header-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1600px;
+     }
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 10px 15px;
+    }
+    .header .logo{
+      width: 137px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  

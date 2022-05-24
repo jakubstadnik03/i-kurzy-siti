@@ -1,0 +1,821 @@
+.max-width{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    scroll-behavior: smooth;
+}
+.logo-large{
+    width: 300px;
+    margin: 10px;
+    display: none;
+}
+
+/* Buttons */
+.button{
+    background-color: var(--red);
+    color: var(--white);
+    border: 0;
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .1em;
+    transition: linear .3s;
+    padding: 20px 50px;
+    display: inline-block;
+}
+.button-action:hover{
+    cursor: pointer;
+    background-color: #E4C6CB;
+    color: var(--black);
+}
+
+.button-main::after{
+        content: url(../svg/arrow-main.svg);
+        width: 150px;
+        height: 200px;
+        position: absolute;
+        bottom: -60px;
+        left: 378px;
+        display: none;
+}
+.button-main-wrapper{
+    position: relative;
+}
+/*Main*/
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-image{
+    background-image: url(../img/zastera-i-kurzy-siti.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 350px;
+    animation: animate 60s infinite ;
+}
+@keyframes animate {
+    0%{
+        background-image: url(../img/zastera-i-kurzy-siti.jpg);
+    }
+    33%{
+        background-image: url(../img/polstar-i-kurzy-siti.jpg);
+    }
+    66%{
+        background-image: url(../img/modry-polstar.jpg);
+    }
+    100%{
+        background-image: url(../img/zastera-i-kurzy-siti.jpg);
+    }
+
+
+    
+}
+.button-photo{
+    position: relative;
+    top: 274px;
+
+    
+}
+.button-photo::before{
+    content: url(../svg/arrow-white.svg);
+    width: 191px;
+    height: 208px;
+    position: absolute;
+    top: -156px;
+    left: -210px;
+
+}
+.main-info{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.main-paragraph{
+    opacity: 80%;
+    max-width: 450px;
+}
+.main-terminy{
+    background-color: #D28E9A;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 0;
+
+    width: 325px;
+}
+.terminy-title{
+    color: var(--white);
+    font-size: 1.5em;
+    margin: 10px;
+    margin-left: 0;
+}
+.terminy-date li{
+    display: block;
+    color: var(--white);
+    font-size: 1.1em;
+}
+.terminy-date{
+    padding-left: 0;
+    
+}
+
+/* Co se v kurzu naučíte */
+.naucit{
+    background-color: var(--green);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain, cover;
+    min-height: 670px;
+}
+
+.naucit-content{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1050px;
+}
+.naucit-object{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+.naucit-image{
+    width: 100px;
+}
+.naucit-title{
+    color: var(--white);
+    font-weight: normal;
+    font-family: 'Libre Franklin', sans-serif;
+    width: 150px;
+    font-size: 1em;
+
+}
+
+/* O mně */
+
+.omne{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+.omne-image{
+    max-width: 270px;
+    padding: 15px;
+}
+.omne-paragraph{
+    max-width: 500px;
+
+    width: 100%;
+}
+.omne-content .title{
+    padding-left: 0;
+}
+.omne-content::after{
+    content: "";
+    width: 176px;
+    height: 140px;
+    background-image: url(../svg/arrow-omne.svg);
+    display: block;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 180px;
+    left: 315px;
+    margin-bottom: -200px;
+    display: none;
+}
+/* Příběh */
+.pribeh-img{
+    max-width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pribeh-wrapper{
+    display: flex;
+    margin-bottom: 40px;
+    flex-direction: column;
+}
+.pribeh-text{
+    font-size: 1em;
+}
+
+/* footer */
+
+.icon-wrapper{
+    align-self: center;
+    order: -2;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.main-footer{
+    background-color: var(--green);
+    color: var(--white);
+    margin-top: 20px;
+}
+.footer-title{
+    color: var(--white);
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.footer-text{
+    color: var(--white);
+    font-size: 0.9em;
+}
+
+.footer-box{
+    max-width: 400px;
+    
+    margin: 0;
+}
+.footer-box ul li{
+    display: block;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin: 5px;
+
+}
+.footer-box ul{
+    padding-left: 0;
+}
+.footer-box ul li a{
+    text-decoration: none;
+    color: var(--white);
+    
+    transition: linear .3s;
+}
+.footer-box ul li a:hover{
+    opacity: 40%;
+}
+.footer-logo{
+    order: 3;
+    align-self: center;
+}
+.icon-size{
+    width: 36px;
+}
+.icon-size:hover #eW4CtGgXs6E4_to {animation: eW4CtGgXs6E4_to__to 3000ms linear 1 normal forwards}@keyframes eW4CtGgXs6E4_to__to { 0% {transform: translate(18.999999px,19.050543px)} 6.666667% {transform: translate(18.999999px,10.3639px)} 100% {transform: translate(18.999999px,10.3639px)}}
+.mobile-none{
+    display: none;
+}
+.name::before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-image: url(../svg/profil.svg);
+    margin-right: 10px;
+}
+.phone::before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-image: url(../svg/phone.svg);
+    margin-right: 10px;
+}
+.mail::before{
+    content: "";
+    width: 25px;
+    height: 18px;
+    display: inline-block;
+    background-image: url(../svg/mail.svg);
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.name-white::before{
+    background-image: url(../svg/profil_white.svg);
+}
+.phone-white::before{
+    background-image: url(../svg/phone_white.svg);
+}
+.mail-white::before{
+    background-image: url(../svg/mail_white.svg);
+}
+
+/* Informace o kurzu */
+#informace{
+    background-color: var(--green);
+}
+.info-placed p{
+    color: var(--white);
+    margin: 12px 0;
+}
+.text1{
+    grid-area: text1;
+}
+.text2{
+    grid-area: text2;
+    
+}
+.text3{
+    grid-area: text3;
+    align-self: auto;
+}
+.text4{
+    grid-area: text4;
+}
+.text5{
+    grid-area: text5;
+    align-self: center;
+    
+}
+.text6{
+    grid-area: text6;
+
+}
+.text7{
+    grid-area: text7;
+    max-width: 1000px;
+}
+
+.text1::after{
+    content: "";
+    width: 217px;
+    height: 95px;
+    background-image: url(../svg/info1.svg);
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 35%;
+
+}
+.text2::after{
+    content: "";
+    width: 217px;
+    height: 200px;
+    background-image: url(../svg/info2.svg);
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: calc(80%);
+    top: -95%;
+}
+.text3::after{
+    content: "";
+    width: 50px;
+    height: 135px;
+    background-image: url(../svg/info3.svg);
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 102%;
+    top: 64%;
+}
+
+.text4::after{
+    content: url(../svg/info4.svg);
+    width: 231px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    left: -40%;
+    top: -55%;
+}
+.text5::after{
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-image: url(../svg/info5.svg);
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -60%;
+    top: 50%;
+    
+}
+.text6::after{
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-image: url(../svg/info6.svg);
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+ 
+    
+}
+.text8{
+    grid-area: text8;
+}
+.text8::after{
+    content: "";
+    width: 250px;
+    height: 200px;
+    background-image: url(../svg/info8.svg);
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -30%;
+ 
+    
+}
+.info-placed{
+    
+    padding-bottom: 40px;
+    justify-content: space-between;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "text1 . text3"
+    "text2 text2 text2"
+    "text6 0 text4"
+    "text5 text5 text5"
+    "text7 text7 text8"
+    ;
+    justify-items: center;
+    display: block;
+    
+    
+}
+
+.info-placed p::after, .info-placed .text5::after{
+    display: none;
+}
+.button-white{
+    background-color: var(--white);
+    color: var(--red);
+}
+/* Program */
+.program-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.program-day{
+    border-radius: 20px;
+    padding: 15px;
+}
+.program-day ul li{
+    display: block;
+    padding-left: 0;
+    display: flex;
+}
+.program-day ul{
+    padding-left: 0;
+}
+.program-title{
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+.program-day .date{
+    padding-right: 10px;
+    min-width: fit-content;
+    min-width: 100px;
+}
+.program-day p{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.program-day.light{
+    background-color: var(--white-green);
+}
+.program-day.dark{
+    background-color: var(--light-green);
+}
+
+.sobota {
+    background-image: url(../svg/prst_bg.svg), url(../svg/zehli_bg.svg), url(../svg/jehla_bg.svg), url(../svg/nit_bg.svg), url(../svg/nuzky_bg.svg), url(../svg/knoflik_bg.svg), url(../svg/koule_bg.svg);
+    background-repeat: no-repeat;
+    background-size: 46px, 158px, 58px, 59px, 118px;
+    background-position-x: 403px, 224px, 44px, 223px , 42px, 64px, 383px;
+    background-position-y: 52px, 246px, 117px, 27px, 392px, 248px, 322px;
+}
+
+
+/* Ceník */
+.cenik-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.terminy ul li{
+    display: block;
+}
+.cenik ul li{
+    display: flex;
+    margin: 10px;
+   
+}
+.cenik-button{
+    padding: 20px 40px !important;
+}
+.cenik ul{
+    padding-left: 20px;
+}
+.cenik ul li p{
+    margin: 0;
+    margin-left: 10px;
+    max-width: 340px;
+}
+.termin-box{
+    background-color: var(--green);
+    padding: 15px;
+}
+.termin-box li{
+    color: var(--white);
+    padding: 5px;
+    font-size: 1em;
+}
+.termin-text{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.terminy .title{
+    padding-left: 0;
+}
+
+.cenik-info{
+    font-weight: bold;
+    min-width: 170px;
+    max-width: 170px;
+}
+/* Kontakt */
+.contact-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-info-wrapper{
+    padding: 20px; 
+}
+.contact-info{
+    background-color: var(--white-green);
+    
+    max-width: 520px;
+    width: 100%;
+}
+.contact-flex-under{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-text-under{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.contact-flex-under img{
+    margin-right: 40px;
+}
+.contact-title{
+    max-width: 500px;
+    margin-left: 10px;
+    
+}
+.contact-address li{
+    display: block;
+    padding: 10px;
+}
+.contact-address{
+    padding-left: 0;
+}
+.contact-flex-under img{
+    width: 100px;
+}
+.ico::before{
+    content: "IČO:";
+    width: 25px;
+    height: 18px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.contact-form{
+    background-color: var(--green);
+    max-width: 520px;
+    width: 100%;
+}
+.contact-form .input{
+    background-color: #cfe8e59c;
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    height: 29px;
+    border: 0;
+    margin: 10px 0;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1em;
+
+}
+
+.contact-form label{
+    color: var(--white);
+}
+.contact-form textarea{
+    display: block;
+    background-color: #cfe8e59c;
+    border: 0;
+    margin-top: 10px;
+    max-width: 500px;
+    width: 100%;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1em;
+    height: 100px;
+
+}
+.contact-form form{
+    padding: 20px;
+    max-width: 500px;
+}
+.button-form{
+    background-color: var(--white);
+    color: var(--red);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.phone-number{
+    width: 90%;
+    margin-right: 10px;
+}
+.email{
+    width: 90%;
+    margin-left: 10px;
+}
+.button-form{
+    padding: 15px 40px !important;
+}
+@media only screen and (min-width: 821px){
+    .button{
+        padding: 30px 75px;
+    }
+    .main-wrapper{
+        flex-direction: row;
+    }
+    .main-info{
+        max-width: 40vw;
+    }
+    .main-image{
+        margin-left: 50px;
+    }
+    .button-photo{
+        top: 60vh;
+        position: relative;
+        left: 20vw;
+        top: 80%;
+        
+    }
+    .main-info{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .main-terminy{
+        padding: 10px; 
+        padding-right: 20px;
+    }
+    .arrow{
+        display: block;
+    }
+    .naucit{
+    background-image: url(../svg/curve.svg), url(../svg/background-polygon.svg);
+    }
+    .naucit-image{
+        width: 135px;
+    }
+    .naucit-object{
+        margin: 20px;
+    }
+    .naucit-title{
+        font-size: 1.2em; 
+         width: 200px;
+         margin: 10px;
+         text-align: center;
+    }
+    .omne{
+        flex-direction: row;
+    }
+    .omne-content::after{
+        display: block;
+    }
+    .omne-paragraph{
+        padding-bottom: 40px;
+    }
+    .omne-image{
+        max-width: 470px;
+    }
+    .footer-wrapper{
+        flex-direction: row;
+    }
+    .footer-box{
+        margin: 20px;
+    }
+    .footer-logo{
+        order: inherit;
+    }
+    .icon-wrapper{
+        order: initial;
+    }
+    .pribeh-wrapper{
+        flex-direction: row;
+    }
+    .pribeh-text{
+        margin-left: 40px;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        
+    }
+    .pribeh-img{
+        max-width: 30vw;
+    }
+    .info-placed p::after, .info-placed .text5::after{
+        display: block;
+    }
+    .info-placed{
+    display: grid;
+    padding: 30px;
+    padding-bottom: 45px;
+    }
+    .right{
+        text-align: right;
+        margin-bottom: 30px;
+    }
+    .text5{
+        position: relative;
+    bottom: 40px;
+    }
+    .text2{
+        max-width: 400px;
+    position: relative;
+    bottom: 40px;
+    }
+    .info-placed p{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1.2em;
+        position: relative;
+    }
+    .program-wrapper{
+        flex-direction: row;
+    }
+    .program-day ul li{
+        padding: 10px;
+    }
+    .cenik-button{
+        margin: 0;
+    }
+    .cenik-wrapper{
+        flex-direction: row;
+    }
+    .contact-wrapper{
+        flex-direction: row;
+        align-items: inherit;
+    }
+    .contact-form .input{
+        height: 42px;
+    }
+    .contact-form textarea{
+        height: auto;
+    }
+    .terminy-box li{
+        padding: 10px;
+        font-size: 1.2em;
+    }
+    .mobile-none{
+        display: block;
+    }
+    .button-photo{
+        padding: 14px 24px;
+    }
+    .button-main::after{
+        display: block;
+    }
+    .logo-large{
+        display: block;
+    }
+    .program-day.light{
+        width: 490px;
+    }
+    .text7{
+        margin-left: 166px !important;
+    }
+}
+@media (min-width: 2200px){
+        .main-image{
+            height: 58vh;
+        }
+}

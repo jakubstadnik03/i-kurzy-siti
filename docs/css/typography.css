@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;400;700&family=Roboto:wght@300;400;700&display=swap');
+:root {
+    --green: #88C0B9;
+    --light-green: #CFE8E5;
+    --white-green: #E8EEED;
+    --black: #323232;
+    --red: #BE4E62;
+    --light-red: #BE4E62;
+    --white: #F2F2F2;
+}
+.display-none{
+    position: absolute;
+    left: -9999px;
+}
+body{
+    background-color: var(--white);
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    font-weight: bold;
+
+}
+
+p{
+    
+    color: var(--black);
+}
+
+.white{
+    color: var(--white);
+}
+.red{
+    color: var(--red);
+}
+.main-title{
+    font-size: 3em;
+    margin: 10px;
+    margin-left: 0;
+}
+.title{
+    font-size: 2.5em;
+    padding: 20px;
+    margin: 0;
+}
+.paragraph{
+    letter-spacing: .05em;
+    line-height: 1.3em;
+}
+@media only screen and (max-width: 600px){
+    .main-title{
+        font-size: 1.8em;
+    }
+    h3{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    ul{
+        margin: 0;
+    }
+    .title{
+        font-size: 1.8em;
+        padding-left: 0;
+    }
+    .omne-title{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .terminy-date li{
+        font-size: 1em;
+    }
+    .terminy-title{
+        margin: 3px;
+        margin-left: 0;
+    }
+}
