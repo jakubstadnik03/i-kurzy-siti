@@ -1,21 +1,23 @@
 const menu = [
-    {
-      id: 1,
-      date: "9.9.2022 - 11.9.2022",
-    },
-    {
-      id: 2,
-      date: "14.10.2022 - 16.10.2022",
-    },
-    {
-      id: 3,
-      date: "11.11.2022 – 13.11.2022",
-    }
-    
-  ];
+  {
+    id: 1,
+    date: "12.4.2024 – 14.4.2024",
+  },
+  {
+    id: 2,
+    date: "17.5.2024 – 19.5.2024",
+  },
+  {
+    id: 3,
+    date: "11.10.2024 – 13.10.2024",
+  },
+  {
+    id: 4,
+    date: "NABÍDKA KURZU ŠITÍ NA MÍRU PRO ZAČÁTEČNÍKY I POKROČILÉ",
+  },
+];
 
-
-  const sectionCenter = document.querySelector(".date-input");
+const sectionCenter = document.querySelector(".date-input");
 // display all items when page loads
 window.addEventListener("DOMContentLoaded", function () {
   diplayMenuItems(menu);

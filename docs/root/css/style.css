@@ -522,6 +522,7 @@ body{
 .cenik ul{
     padding-left: 20px;
 }
+
 .cenik ul li p{
     margin: 0;
     margin-left: 10px;
@@ -548,6 +549,10 @@ body{
     font-weight: bold;
     min-width: 170px;
     max-width: 170px;
+}
+.cenik-text{
+    max-width: 320px;
+    font-weight: lighter;
 }
 /* Kontakt */
 .contact-wrapper{
